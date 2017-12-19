@@ -1,0 +1,6 @@
+target 'quizmaster' do
+
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  
+end
