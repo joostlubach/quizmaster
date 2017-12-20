@@ -26,7 +26,8 @@ const $ = StyleSheet.create({
 	},
 
 	points: {
-		fontSize: 48
+		fontSize: 48,
+		color:   'white'
 	}
 
 })

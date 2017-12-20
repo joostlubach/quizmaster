@@ -1,6 +1,7 @@
 import React from 'react'
 import {observer} from 'mobx-react'
-import {StyleSheet, View} from 'react-native'
+import {StyleSheet, View, ActivityIndicator} from 'react-native'
+import {QuizScreen, VideoScreen} from '.'
 import {dataStore} from '../stores'
 
 @observer
@@ -11,7 +12,7 @@ export default class App extends React.Component {
 	}
 
 	render() {
-		if (dataStore.firebase == null) {
+		if (dataStore.points == null) {
 			return this.renderLoading()
 		}
 
@@ -41,7 +42,10 @@ const $ = StyleSheet.create({
 
 	loading: {
 		flex: 1,
-		backgroundColor: 'black'
+		backgroundColor: 'black',
+
+		alignItems:     'center',
+		justifyContent: 'center'
 	}
 	
 })

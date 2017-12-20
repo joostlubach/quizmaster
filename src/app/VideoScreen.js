@@ -9,7 +9,11 @@ export default class QuizScreen extends React.Component {
 	render() {
 		return (
 			<View style={$.screen}>
-				<Video style={$.video} source={require('../../res/dafunk.mp4') autoplay/>
+				<Video
+					style={$.video}
+					resizeMode='cover'
+					source={require('../../res/dafunk.mp4')}
+				/>
 			</View>
 		)
 	}
@@ -20,17 +24,12 @@ const $ = StyleSheet.create({
 
 	screen: {
 		flex: 1,
-		backgroundColor: 'black',
-		alignItems:      'center',
-		justifyContent:  'center'
+		backgroundColor: 'black'
 	},
 
 	video: {
-		flex: 1
-	},
-
-	points: {
-		fontSize: 48
+		flex: 1,
+		backgroundColor: 'green'
 	}
 
 })

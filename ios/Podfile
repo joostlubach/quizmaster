@@ -1,6 +1,8 @@
-target 'quizmaster' do
+target 'Quizmaster' do
 
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-  
+
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
 end
