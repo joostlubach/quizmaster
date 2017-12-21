@@ -25,8 +25,13 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E6FE16D97D85D59EDF8DA /* libPods-Quizmaster.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B6FBE149B79B4D3CAF00F46A /* libGPHParticleSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */; };
 		C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80F7DA31FEABCF500EA2EF6 /* libRCTVideo.a */; };
 		C8FADBE31FEAB9FC00CF663B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8FADBBE1FEAB9FC00CF663B /* GoogleService-Info.plist */; };
+		C8FD88E31FEC003800D77228 /* PSParticleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88DB1FEC003700D77228 /* PSParticleViewManager.m */; };
+		C8FD88E51FEC003800D77228 /* PSParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88DE1FEC003700D77228 /* PSParticleView.m */; };
+		C8FD88E61FEC003800D77228 /* PSParticleCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88E01FEC003700D77228 /* PSParticleCellManager.m */; };
+		C8FD88E71FEC003800D77228 /* PSParticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88E11FEC003800D77228 /* PSParticleCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,12 +324,21 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		70A1FF571DAD71882C724E17 /* Pods-Quizmaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizmaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quizmaster/Pods-Quizmaster.release.xcconfig"; sourceTree = "<group>"; };
+		778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libGPHParticleSystem.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B2503602D45F471BB3FB357E /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		C80F7D8A1FEABCF500EA2EF6 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		C8FADBBE1FEAB9FC00CF663B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Quizmaster/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C8FD88D91FEC003700D77228 /* PSParticleViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleViewManager.h; sourceTree = "<group>"; };
+		C8FD88DA1FEC003700D77228 /* PSParticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleCell.h; sourceTree = "<group>"; };
+		C8FD88DB1FEC003700D77228 /* PSParticleViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSParticleViewManager.m; sourceTree = "<group>"; };
+		C8FD88DE1FEC003700D77228 /* PSParticleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSParticleView.m; sourceTree = "<group>"; };
+		C8FD88DF1FEC003700D77228 /* PSParticleCellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleCellManager.h; sourceTree = "<group>"; };
+		C8FD88E01FEC003700D77228 /* PSParticleCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSParticleCellManager.m; sourceTree = "<group>"; };
+		C8FD88E11FEC003800D77228 /* PSParticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSParticleCell.m; sourceTree = "<group>"; };
+		C8FD88E21FEC003800D77228 /* PSParticleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleView.h; sourceTree = "<group>"; };
 		D2FDE9993A27DBEDE2ED0B37 /* Pods-Quizmaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizmaster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quizmaster/Pods-Quizmaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -349,6 +363,7 @@
 				96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */,
 				0244360318884DACB7FBF3DD /* libRNFirebase.a in Frameworks */,
 				C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */,
+				B6FBE149B79B4D3CAF00F46A /* libGPHParticleSystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +443,7 @@
 		13B07FAE1A68108700A75B9A /* Quizmaster */ = {
 			isa = PBXGroup;
 			children = (
+				C8FD88D81FEC002B00D77228 /* ParticleSystem */,
 				C8FADBBE1FEAB9FC00CF663B /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -563,6 +579,7 @@
 			isa = PBXGroup;
 			children = (
 				B2503602D45F471BB3FB357E /* libRNFirebase.a */,
+				778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -573,6 +590,21 @@
 				C8C7AE791FEAB9BE00FADBC1 /* libRNFirebase.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C8FD88D81FEC002B00D77228 /* ParticleSystem */ = {
+			isa = PBXGroup;
+			children = (
+				C8FD88DA1FEC003700D77228 /* PSParticleCell.h */,
+				C8FD88E11FEC003800D77228 /* PSParticleCell.m */,
+				C8FD88DF1FEC003700D77228 /* PSParticleCellManager.h */,
+				C8FD88E01FEC003700D77228 /* PSParticleCellManager.m */,
+				C8FD88E21FEC003800D77228 /* PSParticleView.h */,
+				C8FD88DE1FEC003700D77228 /* PSParticleView.m */,
+				C8FD88D91FEC003700D77228 /* PSParticleViewManager.h */,
+				C8FD88DB1FEC003700D77228 /* PSParticleViewManager.m */,
+			);
+			name = ParticleSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1038,8 +1070,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FD88E61FEC003800D77228 /* PSParticleCellManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				C8FD88E71FEC003800D77228 /* PSParticleCell.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				C8FD88E31FEC003800D77228 /* PSParticleViewManager.m in Sources */,
+				C8FD88E51FEC003800D77228 /* PSParticleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1069,11 +1105,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-particle-system/ParticleSystem-iOS/**",
 				);
 				INFOPLIST_FILE = Quizmaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Quizmaster\"",
 					"\"$(SRCROOT)/Quizmaster\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1098,11 +1136,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-particle-system/ParticleSystem-iOS/**",
 				);
 				INFOPLIST_FILE = Quizmaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/Quizmaster\"",
 					"\"$(SRCROOT)/Quizmaster\"",
 				);
 				OTHER_LDFLAGS = (
