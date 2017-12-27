@@ -13,7 +13,6 @@ export default class QuizScreen extends React.Component {
 	}
 
 	componentWillReact() {
-		console.log(dataStore.pointsIncreased)
 		if (dataStore.pointsIncreased) {
 			this.setState({sparkle: true})
 			requestAnimationFrame(() => {

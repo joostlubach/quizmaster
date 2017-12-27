@@ -12,7 +12,6 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		0244360318884DACB7FBF3DD /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2503602D45F471BB3FB357E /* libRNFirebase.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -25,8 +24,25 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E6FE16D97D85D59EDF8DA /* libPods-Quizmaster.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B6FBE149B79B4D3CAF00F46A /* libGPHParticleSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */; };
 		C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80F7DA31FEABCF500EA2EF6 /* libRCTVideo.a */; };
+		C8C6953D1FEFDD4A007B6FFF /* boing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952D1FEFDD4A007B6FFF /* boing.mp3 */; };
+		C8C6953E1FEFDD4A007B6FFF /* drumroll-release.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952E1FEFDD4A007B6FFF /* drumroll-release.mp3 */; };
+		C8C6953F1FEFDD4A007B6FFF /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952F1FEFDD4A007B6FFF /* start.mp3 */; };
+		C8C695401FEFDD4A007B6FFF /* bg-neutral.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695301FEFDD4A007B6FFF /* bg-neutral.mp3 */; };
+		C8C695411FEFDD4A007B6FFF /* 21-seconds-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695311FEFDD4A007B6FFF /* 21-seconds-over.mp3 */; };
+		C8C695421FEFDD4A007B6FFF /* drumroll.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695321FEFDD4A007B6FFF /* drumroll.mp3 */; };
+		C8C695431FEFDD4A007B6FFF /* zap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695331FEFDD4A007B6FFF /* zap.mp3 */; };
+		C8C695441FEFDD4A007B6FFF /* chimes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695341FEFDD4A007B6FFF /* chimes.mp3 */; };
+		C8C695451FEFDD4A007B6FFF /* ending.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695351FEFDD4A007B6FFF /* ending.mp3 */; };
+		C8C695461FEFDD4A007B6FFF /* victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695361FEFDD4A007B6FFF /* victory.mp3 */; };
+		C8C695471FEFDD4A007B6FFF /* bg-suspense.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695371FEFDD4A007B6FFF /* bg-suspense.mp3 */; };
+		C8C695481FEFDD4A007B6FFF /* 21-seconds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695381FEFDD4A007B6FFF /* 21-seconds.mp3 */; };
+		C8C695491FEFDD4A007B6FFF /* bg-heartbeat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C695391FEFDD4A007B6FFF /* bg-heartbeat.mp3 */; };
+		C8C6954A1FEFDD4A007B6FFF /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6953A1FEFDD4A007B6FFF /* wrong.mp3 */; };
+		C8C6954B1FEFDD4A007B6FFF /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6953B1FEFDD4A007B6FFF /* correct.mp3 */; };
+		C8C6954C1FEFDD4A007B6FFF /* question.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6953C1FEFDD4A007B6FFF /* question.mp3 */; };
+		C8C6954E1FEFDDE0007B6FFF /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C7AE791FEAB9BE00FADBC1 /* libRNFirebase.a */; };
+		C8C695551FEFDE16007B6FFF /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C695541FEFDE10007B6FFF /* libRNSound.a */; };
 		C8FADBE31FEAB9FC00CF663B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8FADBBE1FEAB9FC00CF663B /* GoogleService-Info.plist */; };
 		C8FD88E31FEC003800D77228 /* PSParticleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88DB1FEC003700D77228 /* PSParticleViewManager.m */; };
 		C8FD88E51FEC003800D77228 /* PSParticleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FD88DE1FEC003700D77228 /* PSParticleView.m */; };
@@ -231,6 +247,13 @@
 			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
 			remoteInfo = "RCTVideo-tvOS";
 		};
+		C8C695531FEFDE10007B6FFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19825A1E1BD4A89800EE0337;
+			remoteInfo = RNSound;
+		};
 		C8C7AE231FEAB8ED00FADBC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -324,12 +347,27 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		70A1FF571DAD71882C724E17 /* Pods-Quizmaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizmaster.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quizmaster/Pods-Quizmaster.release.xcconfig"; sourceTree = "<group>"; };
-		778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libGPHParticleSystem.a; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		B2503602D45F471BB3FB357E /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		C80F7D8A1FEABCF500EA2EF6 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
+		C8C6952D1FEFDD4A007B6FFF /* boing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boing.mp3; sourceTree = "<group>"; };
+		C8C6952E1FEFDD4A007B6FFF /* drumroll-release.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drumroll-release.mp3"; sourceTree = "<group>"; };
+		C8C6952F1FEFDD4A007B6FFF /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
+		C8C695301FEFDD4A007B6FFF /* bg-neutral.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bg-neutral.mp3"; sourceTree = "<group>"; };
+		C8C695311FEFDD4A007B6FFF /* 21-seconds-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "21-seconds-over.mp3"; sourceTree = "<group>"; };
+		C8C695321FEFDD4A007B6FFF /* drumroll.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drumroll.mp3; sourceTree = "<group>"; };
+		C8C695331FEFDD4A007B6FFF /* zap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zap.mp3; sourceTree = "<group>"; };
+		C8C695341FEFDD4A007B6FFF /* chimes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimes.mp3; sourceTree = "<group>"; };
+		C8C695351FEFDD4A007B6FFF /* ending.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ending.mp3; sourceTree = "<group>"; };
+		C8C695361FEFDD4A007B6FFF /* victory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = victory.mp3; sourceTree = "<group>"; };
+		C8C695371FEFDD4A007B6FFF /* bg-suspense.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bg-suspense.mp3"; sourceTree = "<group>"; };
+		C8C695381FEFDD4A007B6FFF /* 21-seconds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "21-seconds.mp3"; sourceTree = "<group>"; };
+		C8C695391FEFDD4A007B6FFF /* bg-heartbeat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bg-heartbeat.mp3"; sourceTree = "<group>"; };
+		C8C6953A1FEFDD4A007B6FFF /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		C8C6953B1FEFDD4A007B6FFF /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		C8C6953C1FEFDD4A007B6FFF /* question.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = question.mp3; sourceTree = "<group>"; };
+		C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSound.xcodeproj; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; };
 		C8FADBBE1FEAB9FC00CF663B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Quizmaster/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8FD88D91FEC003700D77228 /* PSParticleViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleViewManager.h; sourceTree = "<group>"; };
 		C8FD88DA1FEC003700D77228 /* PSParticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSParticleCell.h; sourceTree = "<group>"; };
@@ -358,12 +396,12 @@
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				C8C6954E1FEFDDE0007B6FFF /* libRNFirebase.a in Frameworks */,
+				C8C695551FEFDE16007B6FFF /* libRNSound.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */,
-				0244360318884DACB7FBF3DD /* libRNFirebase.a in Frameworks */,
 				C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */,
-				B6FBE149B79B4D3CAF00F46A /* libGPHParticleSystem.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +559,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				0BA36B6ADF754BB4AC73A193 /* RNFirebase.xcodeproj */,
 				C80F7D8A1FEABCF500EA2EF6 /* RCTVideo.xcodeproj */,
+				C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -538,11 +577,11 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* Quizmaster */,
+				C8C6954D1FEFDD4D007B6FFF /* Resources */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				4E6AEC76BF6F5EB920E60774 /* Pods */,
 				013757B6B978F319A4FA7FFD /* Frameworks */,
-				C8C7AE451FEAB9BC00FADBC1 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -575,13 +614,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C8C7AE451FEAB9BC00FADBC1 /* Recovered References */ = {
+		C8C6952C1FEFDD4A007B6FFF /* sounds */ = {
 			isa = PBXGroup;
 			children = (
-				B2503602D45F471BB3FB357E /* libRNFirebase.a */,
-				778B7137EDF14033BC92E9EF /* libGPHParticleSystem.a */,
+				C8C6952D1FEFDD4A007B6FFF /* boing.mp3 */,
+				C8C6952E1FEFDD4A007B6FFF /* drumroll-release.mp3 */,
+				C8C6952F1FEFDD4A007B6FFF /* start.mp3 */,
+				C8C695301FEFDD4A007B6FFF /* bg-neutral.mp3 */,
+				C8C695311FEFDD4A007B6FFF /* 21-seconds-over.mp3 */,
+				C8C695321FEFDD4A007B6FFF /* drumroll.mp3 */,
+				C8C695331FEFDD4A007B6FFF /* zap.mp3 */,
+				C8C695341FEFDD4A007B6FFF /* chimes.mp3 */,
+				C8C695351FEFDD4A007B6FFF /* ending.mp3 */,
+				C8C695361FEFDD4A007B6FFF /* victory.mp3 */,
+				C8C695371FEFDD4A007B6FFF /* bg-suspense.mp3 */,
+				C8C695381FEFDD4A007B6FFF /* 21-seconds.mp3 */,
+				C8C695391FEFDD4A007B6FFF /* bg-heartbeat.mp3 */,
+				C8C6953A1FEFDD4A007B6FFF /* wrong.mp3 */,
+				C8C6953B1FEFDD4A007B6FFF /* correct.mp3 */,
+				C8C6953C1FEFDD4A007B6FFF /* question.mp3 */,
 			);
-			name = "Recovered References";
+			name = sounds;
+			path = ../../res/sounds;
+			sourceTree = "<group>";
+		};
+		C8C6954D1FEFDD4D007B6FFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8C6952C1FEFDD4A007B6FFF /* sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C8C695501FEFDE10007B6FFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8C695541FEFDE10007B6FFF /* libRNSound.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C8C7AE751FEAB9BD00FADBC1 /* Products */ = {
@@ -642,6 +712,7 @@
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = JML32JR2JD;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -712,6 +783,10 @@
 				{
 					ProductGroup = C8C7AE751FEAB9BD00FADBC1 /* Products */;
 					ProjectRef = 0BA36B6ADF754BB4AC73A193 /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = C8C695501FEFDE10007B6FFF /* Products */;
+					ProjectRef = C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -918,6 +993,13 @@
 			remoteRef = C80F7DA21FEABCF500EA2EF6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C8C695541FEFDE10007B6FFF /* libRNSound.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSound.a;
+			remoteRef = C8C695531FEFDE10007B6FFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C8C7AE241FEAB8ED00FADBC1 /* libRCTBlob-tvOS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -996,8 +1078,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C8C6954C1FEFDD4A007B6FFF /* question.mp3 in Resources */,
+				C8C695481FEFDD4A007B6FFF /* 21-seconds.mp3 in Resources */,
+				C8C695411FEFDD4A007B6FFF /* 21-seconds-over.mp3 in Resources */,
+				C8C695431FEFDD4A007B6FFF /* zap.mp3 in Resources */,
+				C8C695491FEFDD4A007B6FFF /* bg-heartbeat.mp3 in Resources */,
+				C8C695461FEFDD4A007B6FFF /* victory.mp3 in Resources */,
+				C8C6953F1FEFDD4A007B6FFF /* start.mp3 in Resources */,
+				C8C695401FEFDD4A007B6FFF /* bg-neutral.mp3 in Resources */,
+				C8C695451FEFDD4A007B6FFF /* ending.mp3 in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				C8C6953D1FEFDD4A007B6FFF /* boing.mp3 in Resources */,
+				C8C6954B1FEFDD4A007B6FFF /* correct.mp3 in Resources */,
+				C8C695421FEFDD4A007B6FFF /* drumroll.mp3 in Resources */,
+				C8C6953E1FEFDD4A007B6FFF /* drumroll-release.mp3 in Resources */,
 				C8FADBE31FEAB9FC00CF663B /* GoogleService-Info.plist in Resources */,
+				C8C695441FEFDD4A007B6FFF /* chimes.mp3 in Resources */,
+				C8C695471FEFDD4A007B6FFF /* bg-suspense.mp3 in Resources */,
+				C8C6954A1FEFDD4A007B6FFF /* wrong.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,6 +1197,8 @@
 			baseConfigurationReference = D2FDE9993A27DBEDE2ED0B37 /* Pods-Quizmaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = JML32JR2JD;
@@ -1121,6 +1221,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.mosdev.quizmaster;
 				PRODUCT_NAME = Quizmaster;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1131,6 +1232,8 @@
 			baseConfigurationReference = 70A1FF571DAD71882C724E17 /* Pods-Quizmaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JML32JR2JD;
 				HEADER_SEARCH_PATHS = (
@@ -1152,6 +1255,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.mosdev.quizmaster;
 				PRODUCT_NAME = Quizmaster;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

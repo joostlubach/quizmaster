@@ -25,18 +25,51 @@ export default class DataStore {
   @observable
   screen = 'quiz'
 
+  @observable
+  backgroundTrack = null
+
   connect() {
     const db = firebase.database().ref()
     db.on('value', this.onDatabaseValue)
   }
 
   onDatabaseValue = action(snapshot => {
-    const points = snapshot.child('points').val()
-    const screen = snapshot.child('screen').val()
+    this.points = snapshot.child('points').val()
+    this.screen = snapshot.child('screen').val()
+    this.backgroundTrack = snapshot.child('backgroundTrack').val()
 
-    this.points = points
-    this.screen = screen
+    const sfx = snapshot.child('sfx').val()
+    this.processSoundEffect(sfx)
   })
 
-  
+  //------
+  // Sound effects
+
+  sfxTimestamp = null
+
+  soundEffectHandlers = new Set()
+
+  onSoundEffect(handler) {
+    this.soundEffectHandlers.add(handler)
+  }
+
+  triggerSoundEffect(name: string) {
+    for (const handler of this.soundEffectHandlers) {
+      handler(name)
+    }
+  }
+
+  processSoundEffect(sfx) {
+    if (sfx == null) { return }
+
+    const {time, name} = sfx
+    const timestamp = new Date(time).getTime()
+
+    if (timestamp != null && this.sfxTimestamp != null && timestamp > this.sfxTimestamp) {
+      this.triggerSoundEffect(name)
+    }
+
+    this.sfxTimestamp = timestamp
+  }
+
 }

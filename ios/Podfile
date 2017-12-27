@@ -5,4 +5,6 @@ target 'Quizmaster' do
 
   pod 'react-native-video', :path => '../node_modules/react-native-video'
 
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+
 end

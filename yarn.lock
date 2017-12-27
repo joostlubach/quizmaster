@@ -3594,6 +3594,10 @@ react-native-firebase@^3.2.0:
     postinstall-build "^5.0.1"
     prop-types "^15.6.0"
 
+react-native-sound@^0.10.4:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.10.4.tgz#242286558f457e023dbed42e8c6cbe52cfd313d4"
+
 react-native-video@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-native-video/-/react-native-video-2.0.0.tgz#f33fa6fb7e7e3c93ab5787944cefd58bf7355867"

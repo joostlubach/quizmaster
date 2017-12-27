@@ -12,6 +12,7 @@
     "react": "16.0.0",
     "react-native": "0.51.0",
     "react-native-firebase": "^3.2.0",
+    "react-native-sound": "^0.10.4",
     "react-native-video": "^2.0.0"
   },
   "devDependencies": {
