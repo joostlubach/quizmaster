@@ -18,6 +18,9 @@ export default class DataStore {
   @observable
   prevPoints = null
 
+  @observable
+  ending = false
+
   get pointsIncreased() {
     return this.points > this.prevPoints
   }
@@ -37,6 +40,7 @@ export default class DataStore {
     this.points = snapshot.child('points').val()
     this.screen = snapshot.child('screen').val()
     this.backgroundTrack = snapshot.child('backgroundTrack').val()
+    this.ending = snapshot.child('ending').val()
 
     const sfx = snapshot.child('sfx').val()
     this.processSoundEffect(sfx)

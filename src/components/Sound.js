@@ -278,7 +278,6 @@ export default class Sound extends React.Component<typeof defaultProps, Props, S
 		const isRepeating = rnSound.getNumberOfLoops() === -1
 		const shouldRepeat = props.repeat && props.repeatOverlap == null
 		if (shouldRepeat !== isRepeating) {
-			console.log('number of loops', rnSound === this.rnSound, props.repeat && props.repeatOverlap == null ? -1 : 1)
 			rnSound.setNumberOfLoops(shouldRepeat ? -1 : 1)
 		}
 	}

@@ -25,6 +25,8 @@
 		96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045E6FE16D97D85D59EDF8DA /* libPods-Quizmaster.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C80F7DA31FEABCF500EA2EF6 /* libRCTVideo.a */; };
+		C840E2CA1FF3D5900070BB00 /* quizzical_pitch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C840E2A21FF3D42F0070BB00 /* quizzical_pitch.ttf */; };
+		C840E2D41FF3D6020070BB00 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C840E2D11FF3D5EA0070BB00 /* libBVLinearGradient.a */; };
 		C8C6953D1FEFDD4A007B6FFF /* boing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952D1FEFDD4A007B6FFF /* boing.mp3 */; };
 		C8C6953E1FEFDD4A007B6FFF /* drumroll-release.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952E1FEFDD4A007B6FFF /* drumroll-release.mp3 */; };
 		C8C6953F1FEFDD4A007B6FFF /* start.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8C6952F1FEFDD4A007B6FFF /* start.mp3 */; };
@@ -247,6 +249,20 @@
 			remoteGlobalIDString = 641E28441F0EEC8500443AF6;
 			remoteInfo = "RCTVideo-tvOS";
 		};
+		C840E2D01FF3D5EA0070BB00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840E2CB1FF3D5EA0070BB00 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = BVLinearGradient;
+		};
+		C840E2D21FF3D5EA0070BB00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840E2CB1FF3D5EA0070BB00 /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AA15081EF7F30100718508;
+			remoteInfo = "BVLinearGradient-tvOS";
+		};
 		C8C695531FEFDE10007B6FFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */;
@@ -351,6 +367,8 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		C80F7D8A1FEABCF500EA2EF6 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
+		C840E2A21FF3D42F0070BB00 /* quizzical_pitch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = quizzical_pitch.ttf; path = ../../res/quizzical_pitch.ttf; sourceTree = "<group>"; };
+		C840E2CB1FF3D5EA0070BB00 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		C8C6952D1FEFDD4A007B6FFF /* boing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boing.mp3; sourceTree = "<group>"; };
 		C8C6952E1FEFDD4A007B6FFF /* drumroll-release.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drumroll-release.mp3"; sourceTree = "<group>"; };
 		C8C6952F1FEFDD4A007B6FFF /* start.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = start.mp3; sourceTree = "<group>"; };
@@ -399,6 +417,7 @@
 				C8C6954E1FEFDDE0007B6FFF /* libRNFirebase.a in Frameworks */,
 				C8C695551FEFDE16007B6FFF /* libRNSound.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				C840E2D41FF3D6020070BB00 /* libBVLinearGradient.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				96726B1AB4627BD5C989BA21 /* libPods-Quizmaster.a in Frameworks */,
 				C80F7DB71FEABD0300EA2EF6 /* libRCTVideo.a in Frameworks */,
@@ -559,6 +578,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				0BA36B6ADF754BB4AC73A193 /* RNFirebase.xcodeproj */,
 				C80F7D8A1FEABCF500EA2EF6 /* RCTVideo.xcodeproj */,
+				C840E2CB1FF3D5EA0070BB00 /* BVLinearGradient.xcodeproj */,
 				C8C6954F1FEFDE10007B6FFF /* RNSound.xcodeproj */,
 			);
 			name = Libraries;
@@ -614,6 +634,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C840E2CC1FF3D5EA0070BB00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C840E2D11FF3D5EA0070BB00 /* libBVLinearGradient.a */,
+				C840E2D31FF3D5EA0070BB00 /* libBVLinearGradient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C8C6952C1FEFDD4A007B6FFF /* sounds */ = {
 			isa = PBXGroup;
 			children = (
@@ -641,6 +670,7 @@
 		C8C6954D1FEFDD4D007B6FFF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C840E2A21FF3D42F0070BB00 /* quizzical_pitch.ttf */,
 				C8C6952C1FEFDD4A007B6FFF /* sounds */,
 			);
 			path = Resources;
@@ -728,6 +758,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = C840E2CC1FF3D5EA0070BB00 /* Products */;
+					ProjectRef = C840E2CB1FF3D5EA0070BB00 /* BVLinearGradient.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -993,6 +1027,20 @@
 			remoteRef = C80F7DA21FEABCF500EA2EF6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C840E2D11FF3D5EA0070BB00 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = C840E2D01FF3D5EA0070BB00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C840E2D31FF3D5EA0070BB00 /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = C840E2D21FF3D5EA0070BB00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C8C695541FEFDE10007B6FFF /* libRNSound.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1083,6 +1131,7 @@
 				C8C695411FEFDD4A007B6FFF /* 21-seconds-over.mp3 in Resources */,
 				C8C695431FEFDD4A007B6FFF /* zap.mp3 in Resources */,
 				C8C695491FEFDD4A007B6FFF /* bg-heartbeat.mp3 in Resources */,
+				C840E2CA1FF3D5900070BB00 /* quizzical_pitch.ttf in Resources */,
 				C8C695461FEFDD4A007B6FFF /* victory.mp3 in Resources */,
 				C8C6953F1FEFDD4A007B6FFF /* start.mp3 in Resources */,
 				C8C695401FEFDD4A007B6FFF /* bg-neutral.mp3 in Resources */,

@@ -14,7 +14,15 @@ const soundEffects = [
 	'zap',
 	'victory',
 	'chimes',
-	'boing'
+	'boing',
+	'drumroll',
+	'drumroll-release',
+	'question',
+	'victory',
+	'start',
+	'ending',
+	'21-seconds',
+	'21-seconds-over'
 ]
 
 @observer
@@ -30,6 +38,12 @@ export default class App extends React.Component {
 		dataStore.onSoundEffect(this.onSoundEffect)
 
 		this.loadSoundEffects()
+	}
+
+	componentWillReact() {
+		if (dataStore.pointsIncreased) {
+			this.sounds.get('correct').play()
+		}
 	}
 
 	loadSoundEffects() {
@@ -67,20 +81,41 @@ export default class App extends React.Component {
 
 		return (
 			<View>
-				<Sound repeat repeatOverlap={1.2} playing={shouldPlay && backgroundTrack === 'neutral'} source='bg-neutral.mp3'/>
-				{/*<Sound repeat playing={shouldPlay && backgroundTrack === 'heartbeat'} source='bg-heartbeat.mp3'/>
-		<Sound repeat playing={shouldPlay && backgroundTrack === 'suspense'} source='bg-suspense.mp3'/>*/}
+				<Sound repeat repeatOverlap={1.3} playing={shouldPlay && backgroundTrack === 'neutral'} source='bg-neutral.mp3'/>
+				<Sound repeat repeatOverlap={0.2} playing={shouldPlay && backgroundTrack === 'heartbeat'} source='bg-heartbeat.mp3'/>
+				<Sound repeat repeatOverlap={0.1} playing={shouldPlay && backgroundTrack === 'suspense'} source='bg-suspense.mp3'/>
 			</View>
 		)
 	}
 
+	twentyOneTimeout: ?number = null
+
 	onSoundEffect = (name: string) => {
 		const sound = this.sounds.get(name)
-		console.log(name, sound)
-
 		if (sound == null) { return }
 
-		sound.play()
+		if (name === 'drumroll-release') {
+			setTimeout(() => {
+				this.sounds.get('drumroll').stop()
+			}, 200)
+		}
+
+		if (name === '21-seconds-over') {
+			clearTimeout(this.twentyOneTimeout)
+			setTimeout(() => {
+				this.sounds.get('21-seconds').stop()
+			}, 200)
+		}
+
+		if (name === '21-seconds') {
+			this.twentyOneTimeout = setTimeout(() => {
+				this.onSoundEffect('21-seconds-over')
+			}, 21000)
+		}
+
+		sound.stop(() => {
+			sound.play()
+		})
 	}
 
 }
