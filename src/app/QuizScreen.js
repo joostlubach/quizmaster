@@ -10,7 +10,7 @@ import {ParticleView, ParticleCell, DynamicProperty} from '../vendor/react-nativ
 export default class QuizScreen extends React.Component {
 
 	state = {
-		sparkle:        false,
+		sparkle:    false,
 		pointsRect: null
 	}
 
@@ -45,7 +45,7 @@ export default class QuizScreen extends React.Component {
 
 		const x = pointsRect.x + pointsRect.width / 2
 		const y = pointsRect.y + pointsRect.height / 2
-	
+
 		return (
 			<View style={$.stars}>
 				<ParticleView

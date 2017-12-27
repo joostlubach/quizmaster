@@ -1,5 +1,5 @@
 import React from 'react'
-import {requireNativeComponent} from 'react-native'
+import {requireNativeComponent, Alert} from 'react-native'
 import DynamicProperty from './DynamicProperty';
 
 const PSParticleView = requireNativeComponent('PSParticleView', null)

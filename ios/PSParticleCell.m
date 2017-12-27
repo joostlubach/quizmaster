@@ -29,10 +29,17 @@
     
   UIImageView *imageView = (UIImageView*) view;
   
-  [imageView addObserver:self forKeyPath:@"image"
-                 options:NSKeyValueObservingOptionNew context:nil];
-  self.observedObject = imageView;
-   // don't actually insert the imageview
+  if (imageView.image != nil) {
+    self.emitterCell.contents = (__bridge id) imageView.image.CGImage;
+    if (self.emitterSetupCompletion) {
+      self.emitterSetupCompletion(self.emitterCell);
+    }
+  } else {
+    [imageView addObserver:self forKeyPath:@"image"
+                   options:NSKeyValueObservingOptionNew context:nil];
+    self.observedObject = imageView;
+  }
+    // don't actually insert the imageview
 }
 
 - (void)addSubview:(UIView *)view {

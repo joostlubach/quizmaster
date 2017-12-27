@@ -19,10 +19,13 @@ export default class DataStore {
   prevPoints = null
 
   @observable
+  started = false
+
+  @observable
   ending = false
 
   get pointsIncreased() {
-    return this.points > this.prevPoints
+    return this.prevPoints != null && this.points > this.prevPoints
   }
 
   @observable
@@ -40,6 +43,7 @@ export default class DataStore {
     this.points = snapshot.child('points').val()
     this.screen = snapshot.child('screen').val()
     this.backgroundTrack = snapshot.child('backgroundTrack').val()
+    this.started = snapshot.child('started').val()
     this.ending = snapshot.child('ending').val()
 
     const sfx = snapshot.child('sfx').val()

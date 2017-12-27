@@ -56,6 +56,9 @@ export default class App extends React.Component {
 		if (dataStore.points == null) {
 			return this.renderLoading()
 		}
+		if (!dataStore.started) {
+			return this.renderSplash()
+		}
 
 		return (
 			<View style={$.app}>
@@ -65,6 +68,10 @@ export default class App extends React.Component {
 				{this.renderBackgroundMusic()}
 			</View>
 		)
+	}
+
+	renderSplash() {
+		return <View style={$.splash}/>
 	}
 
 	renderLoading() {
@@ -124,6 +131,11 @@ const $ = StyleSheet.create({
 
 	app: {
 		flex: 1
+	},
+
+	splash: {
+		flex: 1,
+		backgroundColor: 'black'
 	},
 
 	loading: {
